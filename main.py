@@ -124,9 +124,9 @@ def generate_ppt(topic, slide_length, api_key):
 def main():
 
     def button_click():
-        result_label.config(text=generate_ppt('carros populares no Brasil', 5, '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'))
-        #if input2.get().isdigit():
-            #result_label.config(text=generate_ppt(input1.get(), input2.get(), input0.get()))
+        # result_label.config(text=generate_ppt('carros populares no Brasil', 5, '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'))
+        if input2.get().isdigit():
+            result_label.config(text=generate_ppt(input1.get(), input2.get(), input0.get()))
 
     window = tk.Tk()
     window.title("ChatGPT Generated PPTs!")
